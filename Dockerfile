@@ -16,6 +16,8 @@ RUN git config --global user.email "drudock@github.com"
 RUN git config --global user.name "Drudock"
 
 # Install Java.
+
 RUN \
-  apt-get install -y openjdk-7-jdk && \
+  apt-get update && \
+  apt-get install -y openjdk-7-jre && \
   rm -rf /var/lib/apt/lists/*
