@@ -6,6 +6,6 @@ node("ondemand") {
     def drudock = docker.build 'drudock:snapshot'
     drudock.inside {
       sh """#!/bin/bash -l
-      docman --version"""
+      drush --version"""
     }
 }
