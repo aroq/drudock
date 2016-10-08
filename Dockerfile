@@ -12,8 +12,8 @@ RUN /bin/bash -l -c "gem install docman"
 RUN mkdir -p /root/.ssh
 ADD config /root/.ssh/config
 
-RUN git config --global user.email "jenkins@adyax.com"
-RUN git config --global user.name "Adyax Jenkins"
+RUN git config --global user.email "drudock@github.com"
+RUN git config --global user.name "Drudock"
 
 # Install Java.
 RUN \
