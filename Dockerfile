@@ -29,3 +29,15 @@ ENV JAVA_HOME=/usr
 RUN git clone https://github.com/aroq/druflow.git && \
   cd druflow && \
   ./gradlew assemble
+
+RUN python --version
+
+RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "/tmp/get-pip.py"
+
+RUN python /tmp/get-pip.py
+
+RUN apt-get update; apt-get -y install python-dev
+
+RUN pip install ansible
+
+RUN ansible --version
