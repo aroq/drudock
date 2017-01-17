@@ -43,5 +43,5 @@ RUN apt-get install -y nodejs
 RUN npm install -g grunt-cli
 RUN grunt --version
 
-# Install compass
+# Install compass.
 RUN /bin/bash -l -c "gem install compass"
