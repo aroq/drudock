@@ -30,7 +30,7 @@ RUN git clone https://github.com/aroq/druflow.git && \
   cd druflow && \
   ./gradlew assemble
 
-# Install python & ansible.
+# Install python & ansible
 RUN python --version
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "/tmp/get-pip.py"
 RUN python /tmp/get-pip.py
