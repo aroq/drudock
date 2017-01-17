@@ -34,7 +34,8 @@ RUN git clone https://github.com/aroq/druflow.git && \
 RUN python --version
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "/tmp/get-pip.py"
 RUN python /tmp/get-pip.py
-RUN apt-get -y install python-dev
+RUN apt-get update
+RUN apt-get install -y python-dev
 RUN pip install ansible
 
 # Install nodejs & grunt.
