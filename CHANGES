@@ -1,3 +1,10 @@
+Version 1.3.0:
+ - Merge branch 'develop'
+ - Fixed comment
+ - Added apt update before python-dev install
+ - Added update for apt
+ - Fixed comment
+
 Version 1.2.0:
 
 
