@@ -9,7 +9,8 @@ RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A170311380
 RUN curl -L https://get.rvm.io | bash -s stable
 RUN /bin/bash -l -c "rvm install 2.3.0"
 RUN /bin/bash -l -c "rvm --default use 2.3.0"
-RUN /bin/bash -l -c "gem install docman"
+RUN /bin/bash -l -c "gem install specific_install"
+RUN /bin/bash -l -c "gem specific_install https://github.com/Adyax/docman.git develop"
 
 # SSH config.
 RUN mkdir -p /root/.ssh
